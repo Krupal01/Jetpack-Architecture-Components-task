@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.MainActivity"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:paddingHorizontal="20dp">
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMainLiveData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/viewmodel_livedata_data_binding"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMainRoom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/room"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMainWorkManager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/workmanager"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMainPaging"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/paging"/>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMainNavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/navigation_component"/>
+
+</LinearLayout>

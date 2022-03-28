@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/livedata_nav_graph"
+    app:startDestination="@id/pageNumberFragment">
+
+    <fragment
+        android:id="@+id/pageNumberFragment"
+        android:name="com.example.assignment14.ui.fragment.PageNumberFragment"
+        android:label="PageNumberFragment" >
+        <action
+            android:id="@+id/action_pageNumberFragment_to_pageDataFragment"
+            app:destination="@id/pageDataFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pageDataFragment"
+        android:name="com.example.assignment14.ui.fragment.PageDataFragment"
+        android:label="fragment_page_data"
+        tools:layout="@layout/fragment_page_data" />
+</navigation>
