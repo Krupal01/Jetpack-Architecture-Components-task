@@ -4,17 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.activity.LiveDataActivity"
-    android:orientation="vertical"
-    android:id="@+id/LayoutLiveData">
+    tools:context=".ui.activity.RoomDatabaseActivity"
+    android:orientation="vertical">
 
     <androidx.fragment.app.FragmentContainerView
-        android:id="@+id/Room_nav_host_fragment_container"
+        android:id="@+id/livedata_nav_host_fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:name="androidx.navigation.fragment.NavHostFragment"
         app:defaultNavHost="true"
         app:navGraph="@navigation/room_db_nav_graph"/>
-
 
 </LinearLayout>

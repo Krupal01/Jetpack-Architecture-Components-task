@@ -5,6 +5,7 @@ class Constants {
         var BASE_URL = "https://hn.algolia.com/api/v1/"
         var NETWORK_ERROR = "no internet connection"
         var EMPTY_LIST_ERROR = "no network data"
+        var DATABASE_NAME = "student database"
 
     }
 }

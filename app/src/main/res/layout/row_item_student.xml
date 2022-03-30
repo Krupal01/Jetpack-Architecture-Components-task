@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="student"
+            type="com.example.assignment14.model.StudentModel" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:padding="5dp"
+        app:cardCornerRadius="5dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/StudentItem"
+                android:id="@+id/tvItemName"
+                android:textSize="20sp"
+                android:text="@{student.stuName}"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/StudentItem"
+                android:id="@+id/tvItemPhone"
+                android:text="@{student.stuPhone}"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/StudentItem"
+                android:id="@+id/tvItemMail"
+                android:text="@{student.stuMail}" />
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/StudentItem"
+                android:id="@+id/tvItemAdd"
+                android:text="@{student.stuAdd}"/>
+
+            <com.google.android.material.textview.MaterialTextView
+                style="@style/StudentItem"
+                android:id="@+id/tvItemDOB"
+                android:text="@{student.stuDOB}"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/StudentItem"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvItemGender"
+                    android:text="@{student.stuGender}"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    style="@style/StudentItem"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:id="@+id/tvItemBloodgrp"
+                    android:text="@{student.stuBlood}" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/itemEdit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_edit_24" />
+
+                <ImageButton
+                    android:id="@+id/itemDelet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_delete_24" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

@@ -17,7 +17,7 @@ class MainActivity : AppCompatActivity() {
             gotoActivity(LiveDataActivity::class.java)
         }
 
-        binding.btnMainRoom.setOnClickListener {  }
+        binding.btnMainRoom.setOnClickListener { gotoActivity(RoomDatabaseActivity::class.java) }
         binding.btnMainWorkManager.setOnClickListener {  }
         binding.btnMainPaging.setOnClickListener {  }
         binding.btnMainNavigation.setOnClickListener {  }

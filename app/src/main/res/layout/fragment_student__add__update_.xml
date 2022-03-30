@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="viewModel"
+            type="com.example.assignment14.viewmodel.RoomViewModel" />
+
+        <import type="android.text.TextUtils"/>
+    </data>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.fragment.Student_Add_Update_Fragment"
+        android:paddingHorizontal="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="5dp"
+            android:paddingVertical="2dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvSCRTitle"
+                android:text="@string/add_detail"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@color/purple_500"
+                android:textSize="25sp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/student_name"
+                app:errorEnabled="@{TextUtils.isEmpty(viewModel.stuName)?false : true}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etStudentName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="@={viewModel.stuName}" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/contact_number"
+                app:errorEnabled="@{TextUtils.isEmpty(viewModel.stuPhone)?false : true}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etStudentContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="phone"
+                    android:background="@color/white"
+                    android:text="@={viewModel.stuPhone}"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/e_mail"
+                app:errorEnabled="@{TextUtils.isEmpty(viewModel.stuMail)?false : true}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etStudentMail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textEmailAddress"
+                    android:background="@color/white"
+                    android:text="@={viewModel.stuMail}"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/address"
+                app:errorEnabled="@{TextUtils.isEmpty(viewModel.stuAdd)?false : true}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etStudentAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:text="@={viewModel.stuAdd}"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/birth_date"
+                app:errorEnabled="@{TextUtils.isEmpty(viewModel.stuDOB)?false : true}">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/etStudentDob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:focusable="false"
+                    android:text="@={viewModel.stuDOB}"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:id="@+id/layoutDetails">
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:id="@+id/rgGender">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:id="@+id/tvGender"
+                        android:text="@string/gender"
+                        />
+
+                    <RadioButton
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="@string/male"
+                        android:layout_marginHorizontal="5dp"
+                        android:id="@+id/rbMale"
+                        android:checked="@{viewModel.stuGender.equals(@string/male)?true:false}"
+                        android:onClick="@{()->viewModel.setStuGender(@string/male)}"/>
+
+                    <RadioButton
+                        android:id="@+id/rbFemale"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"
+                        android:checked="@{viewModel.stuGender.equals(@string/female)?true:false}"
+                        android:onClick="@{()->viewModel.setStuGender(@string/female)}"/>
+                </RadioGroup>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:layout_height="wrap_content"
+                        android:layout_width="0dp"
+                        android:text="@string/blood_group"
+                        android:id="@+id/tvBloodgrp"
+                        android:layout_weight="5" />
+
+                    <androidx.appcompat.widget.AppCompatSpinner
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/spBloodGrp"
+                        android:entries="@array/blood_group_type"
+                        android:selectedItemPosition="@={viewModel.selectedBloodItem}"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnSubmit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                app:cornerRadius="10dp"
+                android:layout_marginTop="20dp"
+                android:text="@{viewModel.isAddRequest ? @string/register_student : @string/update_student }"
+                />
+
+        </LinearLayout>
+
+    </ScrollView>
+</layout>

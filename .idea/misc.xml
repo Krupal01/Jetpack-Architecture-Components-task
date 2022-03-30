@@ -5,9 +5,13 @@
       <map>
         <entry key="..\:/Tatvasoft_Kotlin/Assignment14/app/src/main/res/layout/activity_live_data.xml" value="0.20416666666666666" />
         <entry key="..\:/Tatvasoft_Kotlin/Assignment14/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/Tatvasoft_Kotlin/Assignment14/app/src/main/res/layout/activity_room_database.xml" value="0.1" />
         <entry key="..\:/Tatvasoft_Kotlin/Assignment14/app/src/main/res/layout/fragment_page_data.xml" value="0.19010416666666666" />
         <entry key="..\:/Tatvasoft_Kotlin/Assignment14/app/src/main/res/layout/fragment_page_number.xml" value="0.20416666666666666" />
+        <entry key="..\:/Tatvasoft_Kotlin/Assignment14/app/src/main/res/layout/fragment_student__add__update_.xml" value="0.19010416666666666" />
+        <entry key="..\:/Tatvasoft_Kotlin/Assignment14/app/src/main/res/layout/fragment_student_list.xml" value="0.20416666666666666" />
         <entry key="..\:/Tatvasoft_Kotlin/Assignment14/app/src/main/res/layout/row_item_hits.xml" value="0.1" />
+        <entry key="..\:/Tatvasoft_Kotlin/Assignment14/app/src/main/res/layout/row_item_student.xml" value="0.20416666666666666" />
       </map>
     </option>
   </component>

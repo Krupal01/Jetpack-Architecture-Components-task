@@ -9,4 +9,57 @@
     <string name="room">Room</string>
     <string name="enter_page_number">Enter Page Number</string>
     <string name="submit">submit</string>
+    <string name="title_activity_room_database">RoomDatabaseActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="student_name">Student Name</string>
+    <string name="add_detail">Add Detail</string>
+    <string name="blood_group">Blood Group :</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="gender">Gender :</string>
+    <string name="contact_number">Contact number</string>
+    <string name="e_mail">E-mail</string>
+    <string name="address">Address</string>
+    <string name="birth_date">Birth date</string>
+    <string name="register_student">Register Student</string>
+    <string name="update_student">Update Student</string>
+    <string name="delete">Delete Warning</string>
+    <string name="delete_message">Are you sure to delete this details</string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="error_email_valid">Error : Invalid Email</string>
+    <string name="error_phone_number">Error : Invalid Phone number</string>
+    <string name="error_DOB">Error : Invalid date</string>
+    <string name="error_name">Error : Invalid Name</string>
+    <string name="error_address">Error : Invalid Address</string>
+    <string name="error_blood">Error : Invalid blood group</string>
+
+    <array name="blood_group_type">
+        <item>select any one</item>
+        <item>A+</item>
+        <item>B+</item>
+        <item>AB+</item>
+        <item>O+</item>
+        <item>A-</item>
+        <item>B-</item>
+        <item>AB-</item>
+        <item>O-</item>
+    </array>
+
+    <style name="StudentItem">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">15dp</item>
+        <item name="fontFamily">sans-serif</item>
+        <item name="android:lines">1</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
 </resources>
