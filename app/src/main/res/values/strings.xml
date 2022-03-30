@@ -40,6 +40,10 @@
     <string name="error_name">Error : Invalid Name</string>
     <string name="error_address">Error : Invalid Address</string>
     <string name="error_blood">Error : Invalid blood group</string>
+    <string name="add_current_screen_to_backstack">Add current screen to backstack</string>
+    <string name="go_back">go back</string>
+    <string name="go_to_screen_2">go to screen 2</string>
+    <string name="go_to_screen_3">go to screen 3</string>
 
     <array name="blood_group_type">
         <item>select any one</item>
@@ -62,4 +66,7 @@
         <item name="android:textColor">@color/black</item>
     </style>
 
+    <string name="screen1">Screen 1</string>
+    <string name="screen2">Screen 2</string>
+    <string name="screen3">Screen 3</string>
 </resources>

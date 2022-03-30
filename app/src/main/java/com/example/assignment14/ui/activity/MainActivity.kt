@@ -20,7 +20,7 @@ class MainActivity : AppCompatActivity() {
         binding.btnMainRoom.setOnClickListener { gotoActivity(RoomDatabaseActivity::class.java) }
         binding.btnMainWorkManager.setOnClickListener {  }
         binding.btnMainPaging.setOnClickListener {  }
-        binding.btnMainNavigation.setOnClickListener {  }
+        binding.btnMainNavigation.setOnClickListener { gotoActivity(NavigationActivity::class.java) }
 
     }
 

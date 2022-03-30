@@ -13,6 +13,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Assignment14">
         <activity
+            android:name=".ui.activity.NavigationActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.activity.RoomDatabaseActivity"
             android:exported="false"
             android:label="@string/title_activity_room_database"
